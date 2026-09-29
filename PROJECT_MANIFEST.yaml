@@ -1,0 +1,17 @@
+id: email-alerts-site
+name: email-summary-alerts site
+purpose: Public home page and privacy policy for the email_alerts app (shown as email-summary-alerts), published so the Google OAuth consent screen / Gmail read-only scope verification has a homepage and privacy URL.
+status: active
+remote: github.com/aspenragdolls/email-alerts-site
+stack: [html, css]
+services: [github-pages]
+run:
+  dev: open index.html in a browser
+  deploy: GitHub Pages builds from main (repo root); push to main
+capabilities:
+  implemented: [static-site]
+depends_on: []
+docs: []
+next:
+  - Keep privacy.html in sync with what email_alerts actually stores and sends; bump the Last updated date on changes.
+  - Point the Google OAuth consent screen at https://aspenragdolls.github.io/email-alerts-site/ and privacy.html if not done yet.
